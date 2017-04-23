@@ -1,0 +1,184 @@
+* {box-sizing: border-box;}
+html, body {
+  width: 100%;
+  height: 100%;
+
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Comic Sans MS", "微軟正黑體";
+  line-height: 200%;
+}
+html{font-size: 14px;}/**xs**/
+@media (min-width:575px) {html{font-size: 15px;}}/**sm**/
+@media (min-width:767px) {html{font-size: 17px;}}/**md**/
+@media (min-width:991px) {html{font-size: 19px;}}/**lg**/
+@media (min-width:1199px) {html{font-size: 20px;}}/**xl**/
+body{
+  position: relative;/**for scroll spy**/
+  color: rgb(57, 57, 71);/**default text color**/
+  background-color: white;
+}
+header{text-align: center;margin-bottom: 3rem;}
+section{min-height: 100%;padding: 3rem 2rem;}/**each section covers the screen**/
+section div.row{max-width: 1000px;}
+#C2, #C6{min-height: 60%;}/**Intro and Get it now don't need that much space**/
+article{text-align: left;padding: 1rem;}
+.article_title{}
+footer{
+  padding: 2rem;
+  background-color: rgb(57, 57, 71);
+  color: rgb(255, 254, 244);
+  min-height: 30%;
+}
+footer div.row{max-width: 1000px;}
+/**Customized buttom**/
+.btn-primary {
+  background-color: rgb(57, 57, 71);
+  color: rgb(255, 254, 244);
+  border: rgb(57, 57, 71);
+}
+.btn-primary:hover, .btn-primary:focus{
+  background-color: rgb(70, 70, 85);
+  color: rgb(255, 254, 244);
+}
+.btn-primary:active{
+  background: rgb(70, 70, 85);
+  color: rgb(255, 254, 244);
+}
+/**Top navigation bar**/
+.navbar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  z-index: 2;/**above side navbar**/
+  background-color: rgb(57, 57, 71);
+  background-color: rgba(57, 57, 71, 0.8);
+}
+.navbar .lang{margin-left: auto;}
+/**Jumbotron**/
+.jumbotron{
+  min-height: 100%;
+  margin-bottom: 0;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-weight: bold;
+}
+.jumbotron div{
+  max-width: 100%;
+  word-wrap:break-word;
+}
+.jumbotron .headline{
+  letter-spacing: 0.8rem;
+  font-size: 5rem;
+}
+@media (max-width:575px) {
+  .jumbotron .headline{
+  letter-spacing: 0.8rem;
+  font-size: 3rem;
+}}/**sm**/
+.jumbotron .slogan{
+  font-style: italic;
+  font-size: 2rem;
+}
+/**Card**/
+.card{
+  margin: 2rem;
+}
+/**Side navigation bar------------------------**/
+.side-navbar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 5rem;
+  height: 100%;/**full height for hover**/
+  z-index: 1;/**stay on top**/
+}
+@media (max-width:575px) {
+  .side-navbar{
+    visibility: hidden;
+  }
+}/**sm**/
+/**Background for side navbar**/
+.side-navbar::before{
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.side-navbar:hover::before{width: 5rem; opacity: 0.8;}
+/**The content of the side navbar**/
+.side-nav{
+  display: block;
+  flex-direction: column;
+  position: relative;
+  top: 50%;
+  right: 0;
+  transform:translateY(-50%);
+}
+.side-nav .nav-item{margin: 0.5rem auto;}
+.side-nav a{
+  padding: 0;/**remove padding of anchors**/
+  text-align: center;/**align the text lable**/
+}
+/**Text lables**/
+.side-nav a .label{
+  display: block;
+  position: relative;
+  top: 0;
+  left: 100%;
+  height: 0;
+  transition: all 0.5s;
+  color: rgb(233, 233, 233);
+  opacity: 0;
+  font-size: 0.7rem;
+  line-height: 100%;
+}
+.side-navbar:hover a .label{left: 0; height: 1rem; opacity: 1;margin: 0.5rem 0;}
+.side-nav .active:first-child .label{color: rgb(195, 154, 83);}
+.side-nav a:hover .label{color: rgb(195, 154, 83);}
+/**Circles**/
+.side-nav a::before{
+  font-family: FontAwesome;
+  content: "";
+  display: block;
+  margin: 0 auto;
+  height: 10px;
+  width: 10px;
+  transition: all 0.5s;
+  border-radius: 50%;
+  font-size: 0;
+}
+  /**icons**/
+.side-navbar:hover .top::before{background: url("../images/icons/chevron-up.svg");}
+.side-navbar:hover .intro::before{background-image: url("../images/icons/book.svg");}
+.side-navbar:hover .why::before{background-image: url("../images/icons/question.svg");}
+.side-navbar:hover .features::before{background-image: url("../images/icons/paper-plane.svg");}
+.side-navbar:hover .getit::before{background-image: url("../images/icons/download.svg");}
+.side-navbar:hover .bottom::before{background-image: url("../images/icons/chevron-down.svg");}
+.side-navbar:hover a::before{width: 2rem;height: 2rem;}
+.side-nav .nav-item .nav-link::before{/**make priority highter**/
+  background-color: rgb(233, 233, 233);
+  background-size: 0, 0;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.side-navbar:hover .nav-link::before{background-size: 1.5rem, 1.5rem;}
+.side-nav .active:first-child::before{background-color: rgb(195, 154, 83);}
+.side-nav .nav-item .nav-link:hover::before{background-color: rgb(195, 154, 83);}
+/**End of side navigation bar----------------------**/
+/**Different section backgrounds**/
+#C2, #C4, #C6{
+  background-color: white;
+}
+#C3{
+  background-color: rgb(198, 233, 201);
+}
+#C5{
+  background-color: rgb(224, 179, 156);
+}
