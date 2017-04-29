@@ -131,8 +131,8 @@ footer div.row{max-width: 1000px;}
   line-height: 100%;
 }
 .side-navbar:hover a .label{left: 0; height: 1rem; opacity: 1;margin: 0.5rem 0;}
-.side-nav .active:first-child .label{color: rgb(195, 154, 83);}
-.side-nav a:hover .label{color: rgb(195, 154, 83);}
+.side-nav .active:first-child .label{color: rgb(181, 226, 153);}
+.side-nav a:hover .label{color: rgb(181, 226, 153);}
 /**Circles**/
 .side-nav a::before{
   font-family: FontAwesome;
@@ -160,8 +160,8 @@ footer div.row{max-width: 1000px;}
   background-repeat: no-repeat;
 }
 .side-navbar:hover .nav-link::before{background-size: 1.5rem, 1.5rem;}
-.side-nav .active:first-child::before{background-color: rgb(195, 154, 83);}
-.side-nav .nav-item .nav-link:hover::before{background-color: rgb(195, 154, 83);}
+.side-nav .active:first-child::before{background-color: rgb(181, 226, 153);}
+.side-nav .nav-item .nav-link:hover::before{background-color: rgb(181, 226, 153);}
 /**End of side navigation bar----------------------**/
 /**Different section backgrounds**/
 #C2, #C4, #C6{
