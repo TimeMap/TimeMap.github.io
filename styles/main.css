@@ -68,10 +68,6 @@ footer div.row{max-width: 1000px;}
   max-width: 100%;
   word-wrap:break-word;
 }
-.jumbotron .headline{
-  letter-spacing: 0.8rem;
-  font-size: 5rem;
-}
 .jumbotron .slogan{
   font-style: italic;
   font-size: 2rem;
