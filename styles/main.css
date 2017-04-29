@@ -72,11 +72,6 @@ footer div.row{max-width: 1000px;}
   letter-spacing: 0.8rem;
   font-size: 5rem;
 }
-@media (max-width:575px) {
-  .jumbotron .headline{
-  letter-spacing: 0.8rem;
-  font-size: 3rem;
-}}/**sm**/
 .jumbotron .slogan{
   font-style: italic;
   font-size: 2rem;
