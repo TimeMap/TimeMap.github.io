@@ -19,7 +19,7 @@ body{
 header{text-align: center;margin-bottom: 3rem;}
 section{min-height: 100%;padding: 3rem 2rem;}/**each section covers the screen**/
 section div.row{max-width: 1000px;}
-#C2, #C6{min-height: 60%;}/**Intro and Get it now don't need that much space**/
+#C2, #C7{min-height: 60%;}/**Intro and Get it now don't need that much space**/
 article{text-align: left;padding: 1rem;}
 .article_title{}
 footer{
@@ -55,13 +55,15 @@ footer div.row{max-width: 1000px;}
 }
 .navbar .lang{margin-left: auto;}
 /**Jumbotron**/
-.jumbotron{
-  min-height: 100%;
-  margin-bottom: 0;
+.jumbotron, #C7{  /*first and last page has same background*/
   background-image: url("../images/cover.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.jumbotron{
+  min-height: 100%;
+  margin-bottom: 0;
   font-weight: bold;
 }
 .jumbotron div{
@@ -71,6 +73,7 @@ footer div.row{max-width: 1000px;}
 .jumbotron .slogan{
   font-style: italic;
   font-size: 2rem;
+  opacity: 0.7;
 }
 /**Card**/
 .card{
@@ -163,7 +166,19 @@ footer div.row{max-width: 1000px;}
 .side-nav .active:first-child::before{background-color: rgb(181, 226, 153);}
 .side-nav .nav-item .nav-link:hover::before{background-color: rgb(181, 226, 153);}
 /**End of side navigation bar----------------------**/
+/*img icons*/
+.icon-img{
+  height: 25%;
+  width: 25%;
+  margin: 3%;
+}
+/*license*/
+.auth{
+  opacity: 0.6;
+  font-size: 0.5rem;
+}
 /**Different section backgrounds**/
+
 #C2, #C4, #C6{
   background-color: white;
 }
