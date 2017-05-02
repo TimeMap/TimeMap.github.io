@@ -29,6 +29,12 @@ footer{
   min-height: 30%;
 }
 footer div.row{max-width: 1000px;}
+footer hr{
+  border-color: rgb(255, 254, 244);
+}
+footer .copyright{
+  text-align: center;
+}
 /**Customized buttom**/
 .btn-primary {
   background-color: rgb(57, 57, 71);
