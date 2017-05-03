@@ -19,7 +19,7 @@ body{
 header{text-align: center;margin-bottom: 3rem;}
 section{min-height: 100%;padding: 3rem 2rem;}/**each section covers the screen**/
 section div.row{max-width: 1000px;}
-#C2, #C6{min-height: 60%;}/**Intro and Get it now don't need that much space**/
+#C2, #C7{min-height: 60%;}/**Intro and Get it now don't need that much space**/
 article{text-align: left;padding: 1rem;}
 .article_title{}
 footer{
@@ -29,6 +29,12 @@ footer{
   min-height: 30%;
 }
 footer div.row{max-width: 1000px;}
+footer hr{
+  border-color: rgb(255, 254, 244);
+}
+footer .copyright{
+  text-align: center;
+}
 /**Customized buttom**/
 .btn-primary {
   background-color: rgb(57, 57, 71);
@@ -55,31 +61,25 @@ footer div.row{max-width: 1000px;}
 }
 .navbar .lang{margin-left: auto;}
 /**Jumbotron**/
-.jumbotron{
-  min-height: 100%;
-  margin-bottom: 0;
+.jumbotron, #C7{  /*first and last page has same background*/
   background-image: url("../images/cover.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.jumbotron{
+  min-height: 100%;
+  margin-bottom: 0;
   font-weight: bold;
 }
 .jumbotron div{
   max-width: 100%;
   word-wrap:break-word;
 }
-.jumbotron .headline{
-  letter-spacing: 0.8rem;
-  font-size: 5rem;
-}
-@media (max-width:575px) {
-  .jumbotron .headline{
-  letter-spacing: 0.8rem;
-  font-size: 3rem;
-}}/**sm**/
 .jumbotron .slogan{
   font-style: italic;
   font-size: 2rem;
+  opacity: 0.7;
 }
 /**Card**/
 .card{
@@ -140,8 +140,8 @@ footer div.row{max-width: 1000px;}
   line-height: 100%;
 }
 .side-navbar:hover a .label{left: 0; height: 1rem; opacity: 1;margin: 0.5rem 0;}
-.side-nav .active:first-child .label{color: rgb(195, 154, 83);}
-.side-nav a:hover .label{color: rgb(195, 154, 83);}
+.side-nav .active:first-child .label{color: rgb(181, 226, 153);}
+.side-nav a:hover .label{color: rgb(181, 226, 153);}
 /**Circles**/
 .side-nav a::before{
   font-family: FontAwesome;
@@ -169,10 +169,22 @@ footer div.row{max-width: 1000px;}
   background-repeat: no-repeat;
 }
 .side-navbar:hover .nav-link::before{background-size: 1.5rem, 1.5rem;}
-.side-nav .active:first-child::before{background-color: rgb(195, 154, 83);}
-.side-nav .nav-item .nav-link:hover::before{background-color: rgb(195, 154, 83);}
+.side-nav .active:first-child::before{background-color: rgb(181, 226, 153);}
+.side-nav .nav-item .nav-link:hover::before{background-color: rgb(181, 226, 153);}
 /**End of side navigation bar----------------------**/
+/*img icons*/
+.icon-img{
+  height: 25%;
+  width: 25%;
+  margin: 3%;
+}
+/*license*/
+.auth{
+  opacity: 0.6;
+  font-size: 0.5rem;
+}
 /**Different section backgrounds**/
+
 #C2, #C4, #C6{
   background-color: white;
 }

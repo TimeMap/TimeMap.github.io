@@ -12,8 +12,17 @@
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.css">
+    <!--favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#393947">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#393947">
 
-    <title>TimeMap</title><!--TODO:subtitle-->
+    <title>TimeMap - Map your time. Map your life.</title>
 </head>
 
 <body data-spy="scroll" data-target=".side-nav">
@@ -24,7 +33,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="">
-            <img src="./images/Division.gif" style="max-height:2rem;" alt="Logo"> TimeMap
+            <img src="./images/logo.svg" style="max-height:3rem;" alt="Logo">
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav lang">
@@ -42,16 +51,16 @@
                 <a class="top nav-link" href="#C1"><span class="label">Top</span></a>
             </li>
             <li class="nav-item">
-                <a class="intro nav-link" href="#C2"><span class="label">Intro</span></a>
+                <a class="intro nav-link" href="#C2"><span class="label">Story</span></a>
             </li>
             <li class="nav-item">
-                <a class="why nav-link" href="#C3"><span class="label">Why</span></a>
+                <a class="why nav-link" href="#C3"><span class="label">Intro</span></a>
             </li>
             <li class="nav-item">
                 <a class="features nav-link" href="#C4"><span class="label">Features</span></a>
             </li>
             <li class="nav-item">
-                <a class="getit nav-link" href="#C6"><span class="label">Get It</span></a>
+                <a class="getit nav-link" href="#C7"><span class="label">Get It</span></a>
             </li>
             <!--li class="nav-item">
                 <a class="bottom nav-link" href="#C7"><span class="label">Bottom</span></a>
@@ -63,118 +72,138 @@
     <div id="C1" class="jumbotron jumbotron-fluid d-flex align-items-center">
         <div class="container-fluid text-center">
             <header>
-                <h1 class="headline">TimeMap</h1>
-                <h3 class="slogan text-center">Slogan Slogan Slogan Slogan</h3>
+                <img src="./images/title.svg" style="height:10rem;" alt="TimeMap">
+                <h3 class="slogan text-center">Map your time. Map your life.</h3>
             </header>
-            <a class="btn btn-primary" href="">Notify Me When Available</a><!--TODO:form href-->
+            <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSftG2ZHo4XHuIIs2Q4oBRZeBykkgaEdPTx7AhTPqT93J6hTHQ/viewform?usp=sf_link">Notify Me When Available</a><!--TODO:form href-->
         </div>
     </div>
     <!--main article---------------------------->
-    <!--what are we ?-->
+    <!--Short story-->
     <section id="C2" class="container-fluid d-flex align-items-center justify-content-center">
         <div class="row col-12 align-items-center justify-content-center">
-            <header class="col-12">
-                <h2 class="article_title">Only Text</h2>
-            </header>
-            <article class="col-12 article-center">
-              <p>You've made up your mind to learn a new language so you can reach the dream of traveling around the world. You are all fired up and you download a language learning app like all the other ones in the market but after a few minutes, you never clicked on it twice. Doesn't this scenerio seem familiar?</p>
-            </article>
+          <article class="col-12 col-sm-6 col-md-7">
+            <p>Xiaoming has a impotant midterm today but he still woke up late as always.
+                When he rushes out, he meets a witch holding a magical wand with gleaming
+                light around it. "Abracadabra!" screamed the witch as Xiaoming gets hypnotized
+                and forgets everything a second later. "Now Xiaoming is mine," said the witch
+                with a big smile on her face.
+            </p>
+          </article>
+          <div class="col-12 col-sm-6 col-md-5 d-flex align-items-center justify-content-center">
+            <img class="img-fluid" src="./images/magic-wand.png" alt="image" >
+          </div>
+          <article class="col-12 col-sm-6 col-md-7">
+            <p>The witch decides to take Xiaming back to the forest she lives, leaving farther
+              and farther away from the school. When the witch was enjoying the feeling of
+              dominating a man, something shows up and interrupts them. "DING LING LING!!!!"
+              Xiaoming picks up his mobile phone seeing a notification. "Totay's task: Mid...Midterm.
+               15 minutes before event starts, 10 minutes away from destination by foot!!!"
+                Suddenly, Xiaoming is awaken and then recalls everything. He quickly turns around
+                and rushes to school, leaving the shocked and paralyzed witch all alone.<br/>
+                Thanks to TimeMap, Xiaoming attends the midterm on time!
+            </p>
+          </article>
+          <div class="col-12 col-sm-6 col-md-5 d-flex align-items-center justify-content-center">
+            <img class="img-fluid" src="./images/school-bell.png" alt="image" >
+          </div>
         </div>
     </section>
 
-    <!--Why are we better?-->
+    <!--What are we?-->
     <section id="C3" class="container-fluid d-flex align-items-center justify-content-center">
-        <div class="row col-12 align-items-top justify-content-center">
-            <header class="col-12">
-                <h2 class="article_title">Cards</h2>
+        <div class="row col-12  justify-content-center">
+          <article class="col-12 col-sm-6 col-md-7">
+            <header>
+              <h2 class="article_title">What is TimeMap</h2>
             </header>
-            <div class="col-12 col-md-4">
-              <div calss="card">
-                <div class="card-block">
-                  <article>
-                    <h4 class="card-title">Decide</h4>
-                    <p class="card-text">Decide your own vocabulary list. Learn what you want to learn.</p>
-                  </article>
-                </div>
-              </div>
+            <p>TimeMap is a calendar that makes your scheduling easy and simple. <br/>It's also a personal assitant that reminds you of your upcoming events and the time to leave for your next event.</p>
+            <div class="container ">
+              <img class="img-fluid icon-img" src="./images/calendar.png" alt="image" >
+              <img class="img-fluid icon-img" src="./images/owl.png" alt="image" >
+              <img class="img-fluid icon-img" src="./images/map.png" alt="image" >
             </div>
-            <div class="col-12 col-md-4">
-              <div calss="card">
-                <div class="card-block">
-                  <article>
-                    <h4 class="card-title">Just Do it</h4>
-                    <p class="card-text">You are forced to learn. Laziness is not an excuse anymore.</p>
-                  </article>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-              <div calss="card">
-                <div class="card-block">
-                  <article>
-                    <h4 class="card-title">Division</h4>
-                    <p class="card-text">An additional game that connects learning with entertainment. Let the germs divide!</p>
-                  </article>
-                </div>
-              </div>
-            </div>
+          </article>
+          <div class="col-12 col-sm-6 col-md-5 d-flex align-items-center justify-content-center">
+            <img class="img-fluid" src="./images/Page.png" alt="image" >
+          </div>
         </div>
     </section>
 
     <!--features-->
     <section id="C4" class="container-fluid d-flex align-items-center justify-content-center">
-        <div class="row col-12 align-items-center justify-content-center">
+        <div class="row col-12 align-items-center justify-content-center flex-sm-row-reverse">
           <article class="col-12 col-sm-6 col-md-7">
             <header>
-              <h2 class="article_title">Picture On The Right</h2>
+              <h2 class="article_title">Never be late again</h2>
             </header>
-            <p>To enhance your impression to certain vocabularies, a vocabulary with its definition and sample sentence or a simple question will be shown every time when you unlock your mobile phone.</p>
+            <p>TimeMap notifies you when it's time to leave for your next event, according to your current location and your way of traveling. Never be late again!</p>
           </article>
           <div class="col-12 col-sm-6 col-md-5 d-flex align-items-center justify-content-center">
-            <img class="img-fluid" src="./images/Division.gif" alt="image" >
+            <img class="img-fluid" src="./images/route.png" alt="image" >
           </div>
         </div>
     </section>
 
     <section id="C5" class="container-fluid d-flex align-items-center justify-content-center">
+        <div class="row col-12 align-items-center justify-content-center">
+          <article class="col-12 col-sm-6 col-md-7">
+            <header>
+              <h2 class="article_title">Label your events</h2>
+            </header>
+            <p>Family, school, work, life is complicated and things gets mixed up.
+              Label your events with different tags and priorities, make your life simple and organized once again.</p>
+          </article>
+          <div class="col-12 col-sm-6 col-md-5 d-flex align-items-center justify-content-center">
+            <img class="img-fluid" src="./images/price-tag.png" alt="image" >
+          </div>
+        </div>
+    </section>
+
+    <section id="C6" class="container-fluid d-flex align-items-center justify-content-center">
         <div class="row col-12 align-items-center justify-content-center flex-sm-row-reverse">
           <article class="col-12 col-sm-6 col-md-7">
             <header>
-              <h2 class="article_title">Picture On The Left</h2>
+              <h2 class="article_title">Get ready for a new day</h2>
             </header>
-            <p>Ask you to tag some vocabularies that you are not familiar with. We will make it as a question or show their information to you every time when you unlock your mobile phone.</p>
+            <p>The best way to get you ready for the upcoming challenges. A breif reminder gives you a quick summary of your next day right before sleep.</p>
           </article>
           <div class="col-12 col-sm-6 col-md-5 d-flex align-items-center justify-content-center">
-            <img class="img-fluid" src="./images/Division.gif" alt="image" >
+            <img class="img-fluid" src="./images/beds.png" alt="image" >
           </div>
         </div>
     </section>
     <!--End of features-->
 
     <!--summary-->
-    <section id="C6" class="container-fluid d-flex align-items-center justify-content-center">
+    <section id="C7" class="container-fluid d-flex align-items-center justify-content-center">
         <div class="row col-12 align-items-center justify-content-center">
-            <article class="col-12 col-sm-7 col-lg-5">
+            <article class="col-12 col-sm-6 col-md-7">
                 <h2 class="article_title">Get it now</h2>
-                <p>We're currently under development.</p>
-                <a class="btn btn-primary" href="">Notify Me When Available</a><!--TODO:form href-->
+                <p>TimeMap is currently under development.<br />
+                  Submit the form below to get the latest information.</p>
+                <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSftG2ZHo4XHuIIs2Q4oBRZeBykkgaEdPTx7AhTPqT93J6hTHQ/viewform?usp=sf_link">Notify Me When Available</a><!--TODO:form href-->
             </article>
-            <div class="col-12 col-sm-6"></div>
+            <div class="col-12 col-sm-6 col-md-5 d-flex align-items-center justify-content-center">
+              <img class="img-fluid" src="./images/rocket.png" alt="image" >
+            </div>
         </div>
     </section>
     <!--End of main article--------------------->
 
     <!--Footer-->
-    <footer id="C7" class="container-fluid d-flex align-items-center justify-content-center">
+    <footer id="C8" class="container-fluid d-flex align-items-center justify-content-center">
         <div class="row  col-12 align-items-center justify-content-center justify-content-sm-between">
             <div class="col-12 col-sm-5 d-flex align-items-center justify-content-center">
-              <img class="img-fluid" src="./images/Division.gif" alt="Logo" style="max-height: 200px;">
+              <img class="img-fluid" src="./images/logo.svg" alt="Logo" style="max-height: 100px;">
             </div>
             <article class="col-12 col-sm-7 col-lg-5">
                 <h6>Contact us</h6>
-                <a href="mailto:email">email</a>
+                <a href="mailto:timemapapp@gmail.com">timemapapp@gmail.com</a>
+                <hr/>
+                <p class="auth">Icons designed by <a href="http://www.flaticon.com/authors/freepik">Freepik</a> from Flaticon</p>
             </article>
+            <p class="col-12 copyright">&copy; TimeMap 2017</p>
         </div>
     </footer>
 
@@ -183,6 +212,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 
